@@ -41,7 +41,7 @@
 		[Test]
 		public void Create_WithRoleName_SetsId()
 		{
-			var role = new IdentityRole("NOTadmin");
+			var role = new IdentityRole("NOT1admin");
 
 			var parsed = role.Id.SafeParseObjectId();
 			Expect(parsed, Is.Not.Null);
